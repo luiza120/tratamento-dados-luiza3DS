@@ -1,0 +1,1 @@
+const url = 'https://raw.githubusercontent.com/luiza120/2024-API-FDB-LUIZA3DS.JSON/refs/heads/main/entrevista.json'
