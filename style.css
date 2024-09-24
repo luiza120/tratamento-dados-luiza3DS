@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Gowun+Batang:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --salmao: rgb(216, 180, 182);
+    --branco: rgb(248, 241, 241);
+    --vermelho: rgb(203, 14, 84);
+    --preto: rgb(5, 8, 10);
+    ---fonte-primaria: "Gupter", serif;
+    ---fonte-segundaria: "Poppins", sans-serif;
+    }
+
+    body{
+        background-color: var(--branco);
+        font-family: var(---fonte-segundaria);
+        color: var(--preto);
+        min-height: 100vh;
+    }
+
+header {
+    background-color: var(--preto);
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    color: var(--salmao);
+    padding: 0.5em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 2em;
+    margin: 0 1em 0.5em 0;
+}
