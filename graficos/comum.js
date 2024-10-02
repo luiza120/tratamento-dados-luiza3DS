@@ -4,7 +4,7 @@ function pegarCSS(variavel){
 
 const configuraEixo = {
     color: pegarCSS('--branco'),
-    size: 16,
+    size: 12,
     family: pegarCSS('--fonte-texto')
 }
 

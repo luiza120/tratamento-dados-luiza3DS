@@ -32,7 +32,7 @@ async function criarGraficoBarra(){
         },
         xaxis:{
             tickfont: configuraEixo,
-            tickangle: 15
+            tickangle: 25
 
         },
         yaxis:{
