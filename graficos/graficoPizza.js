@@ -19,7 +19,7 @@ async function criarGraficoPizza(){
         height: 400,
         width: 600,
         plot_color: pegarCSS('--vermelho'),
-        paper_bgcolor: pegarCSS('--preto')
+        paper_bgcolor: pegarCSS('--branco')
     }
 
     const maquiagensTitulo = document.createElement('h3')
