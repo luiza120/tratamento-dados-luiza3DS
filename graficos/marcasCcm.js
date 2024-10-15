@@ -1,12 +1,12 @@
 import { pegarCSS } from "./comum.js"
 
-async function graficosCcm(){
+async function marcasCcm(){
     const url = 'https://raw.githubusercontent.com/luiza120/2024-API-FDB-LUIZA3DS.JSON/refs/heads/main/pesquisaCcm.json'
     const res = await fetch(url)
     const dados = await res.json()
     const marcasVotadas = dados.slice(1).map(marcas => marcas[2])
     const contagemVotagem = marcasVotadas.reduce((acc, marcasVotadas) => {
-        acc[marcasVotadas] = (acc, [marcasVotadas] || 0) + 1
+        acc[marcasVotadas] = (acc, [marcasVotadas] || 1) + 1
         return acc
     }, {})
 
@@ -23,8 +23,8 @@ async function graficosCcm(){
     ]
     const layout = 
     {
-        plot_bgcolor: pegarCSS('--branco'),
-        paper_bgcolor: pegarCSS('--vermelho'),
+        plot_bgcolor: pegarCSS('--b'),
+        paper_bgcolor: pegarCSS('--'),
         font:{
             color: pegarCSS('--preto'),
             family: pegarCSS('---fonte-primaria'),
@@ -52,4 +52,4 @@ async function graficosCcm(){
     caixa.appendChild(paragrafo)
 }
 
-graficosCcm()
+marcasCcm()
